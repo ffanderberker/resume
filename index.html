@@ -7,69 +7,88 @@
   <title>HAZEL</title>
   <meta name="description" content="Небольшой бложик Сони Орешниковой">
   <meta name="keywords" content="blog, oreshnikovaya">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="photo_2023-01-17_15-14-52.jpg" width="250" alt="Соня Орешниковая">
-  <h1>Соня Орешниковая</h1>
-  <p>Инженер, планирующий сменить профессию <strong>в течении года</strong></p>
-  <p>Я люблю заниматься спортом, готовить и свою кошу <em>Милану</em></p>
+  <div class="container">
 
-  <p><strong>Социальные сети:</strong></p>
-  <a href="https://www.instagram.com/jason_fanderberker/" target="_blank">Instagram</a>
-  |
-  <a href="https://t.me/fffander" target="_blank">Telegram</a>
+  <div class="info">
+    <img src="photo_2023-01-17_15-14-52.jpg" class="avatar" alt="Соня Орешниковая">
+    
+    <div class="info-text">
+    <h1>Соня Орешниковая</h1>
+    <p>Инженер, планирующий сменить профессию в течении года</p>
+    <p>Я люблю заниматься спортом, готовить и свою кошу <em>Милану</em></p>
 
+    <h4><strong>Социальные сети:</strong></h4>
+    <a href="https://www.instagram.com/jason_fanderberker/" target="_blank">Instagram</a>
+    |
+    <a href="https://t.me/fffander" target="_blank">Telegram</a>
+    </div>
+  </div>
+
+<div class="card">
   <h2>Мои хобби</h2>
-  <ul>
+  <ul class="list">
     <li>Пилон</li>
     <li>Чтение</li>
     <li>Готовка</li>
   </ul>
+</div>
 
+<div class="card">
   <h2>Опыт работы</h2>
-  <table>
+  <table class="table">
     <thead>
-      <tr>
+      <!-- <tr>
         <th>Название работы</th>
         <th>Должность</th>
         <th>Год</th>
-      </tr>
+      </tr> -->
     </thead>
     <tbody>
       <tr>
-        <td>Робин Сдобин</td>
+        <td>"Робин Сдобин"</td>
         <td>Продавец-пекарь</td>
         <td>2018-2019</td>
       </tr>
       <tr>
-        <td>Газпроект</td>
+        <td>"Газпроект"</td>
         <td>Инженер</td>
         <td>2021-2024</td>
       </tr>
     </tbody>
   </table>
+</div>
 
-  <h2>Связаться со мной</h2>
-  <form>
-    <div>
+<div>
+  <form action="/" class="form">
+    <h2>Связаться со мной</h2>
+
+    <div class="form-row">
+    <div class="form-group">
       <label for="name">Ваше имя</label>
       <input type="name" id="name" placeholder="Введите имя">
     </div>
     
-    <div>
+    <div class="form-group">
       <label for="email">Email</label>
       <input type="email" id="email" placeholder="Введите email">
     </div>
+  </div>
 
-    <div>
+    <div class="form-group">
       <label for="massage">Сообщение</label>
-      <br>
       <textarea name="massage" rows="3" id="massage" placeholder="Ввведите сообщение (что-нибудь приятное!)"></textarea>
     </div>
 
     <div>
-      <button>Отправить</button>
+      <button class="btn">Отправить</button>
     </div>
   </form>
+</div>  
+
+</div>
+
 </body>
 </html>
